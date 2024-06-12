@@ -27,7 +27,7 @@ driver.get("https://googlesnakemods.com/v/current/")
 # hit play if it becomes available
 def check_press_play_button():
     # Define a WebDriverWait
-    wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds
+    wait = WebDriverWait(driver, 5)  # Wait some time
     try:
         # Wait for the button to be clickable
         button = wait.until(EC.element_to_be_clickable((By.XPATH,  "//div[@aria-label='Play']")))
